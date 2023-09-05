@@ -1,0 +1,26 @@
+name: flutter_aop_demo
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.5 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_aop:
+    git:
+      url: git@github.com:Flutter-Aop/flutter_aop.git
+      ref: dev_3.10.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+flutter:
+  uses-material-design: true
+# 项目开启aop功能
+aop-annotation: false
+aop-constant-optimize:
+  - flutter_aop_demo
